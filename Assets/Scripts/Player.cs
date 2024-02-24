@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float moveSpeed = 5;
+    [SerializeField] private float moveSpeed = 5;
+    [SerializeField] private float interactRange = 1; 
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
 
@@ -90,5 +91,11 @@ public class Player : MonoBehaviour
         }
         inputVector = inputVector.normalized;
         return inputVector;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, interactRange);
     }
 }
