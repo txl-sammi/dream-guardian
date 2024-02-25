@@ -354,9 +354,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 3905321752492720557}
-  resetDelay: 2
+  resetDelay: 1
   cooldown: 5
   screen: {fileID: 6717189695981194444}
+  health: {fileID: 0}
+  damage: 0
 --- !u!1 &6717189695981194444
 GameObject:
   m_ObjectHideFlags: 0
