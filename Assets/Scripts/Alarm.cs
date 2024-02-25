@@ -9,13 +9,16 @@ public class Alarm : MonoBehaviour,IInteractable
     public float cooldown = 6f;
     private float timer = 0f;
     private Animation anim;
+    
+    private AudioSource sound;
     [SerializeField] public GameObject health;
-    [SerializeField]public float damage;
+    [SerializeField] public float damage;
 
     void Start()
     {
         anim = GetComponent<Animation>();
-        
+        sound = GetComponent<AudioSource>();
+        sound.Stop();
     }
 
     // Update is called once per frame
@@ -47,6 +50,7 @@ public class Alarm : MonoBehaviour,IInteractable
         //animation
         anim.Play();
         //sound
+        sound.Play();
     }
 
     //call by player when e is pressed
@@ -55,6 +59,7 @@ public class Alarm : MonoBehaviour,IInteractable
         //animation stop
         anim.Stop();
         //sound stop
+        sound.Stop();
     }
 
     //princess check isAlarmOn: if alarm is on, call ApplyDamage()
