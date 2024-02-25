@@ -932,37 +932,9 @@ PrefabInstance:
       value: Princess (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7786687797208677923, guid: 4107f20f44bcc9544bade0a4f1e42fe3, type: 3}
-      propertyPath: startingHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 7786687797208677923, guid: 4107f20f44bcc9544bade0a4f1e42fe3, type: 3}
-      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7786687797208677923, guid: 4107f20f44bcc9544bade0a4f1e42fe3, type: 3}
-      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7786687797208677923, guid: 4107f20f44bcc9544bade0a4f1e42fe3, type: 3}
       propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 369495289}
-    - target: {fileID: 7786687797208677923, guid: 4107f20f44bcc9544bade0a4f1e42fe3, type: 3}
-      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7786687797208677923, guid: 4107f20f44bcc9544bade0a4f1e42fe3, type: 3}
-      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GameOver
-      objectReference: {fileID: 0}
-    - target: {fileID: 7786687797208677923, guid: 4107f20f44bcc9544bade0a4f1e42fe3, type: 3}
-      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7786687797208677923, guid: 4107f20f44bcc9544bade0a4f1e42fe3, type: 3}
-      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

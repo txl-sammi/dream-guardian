@@ -6,7 +6,7 @@ public class Alarm : MonoBehaviour,IInteractable
 {
     // Start is called before the first frame update
     private bool isAlarmOn = false;
-    public float cooldown = 10f;
+    public float cooldown = 6f;
     private float timer = 0f;
     private Animation anim;
 
@@ -24,7 +24,7 @@ public class Alarm : MonoBehaviour,IInteractable
             if(timer > cooldown){
                 timer = 0f;
                 int random = Random.Range(0, 10);
-                if(random >5){
+                if(random >4){
                 TurnOnAlarm();
                 }
             }
