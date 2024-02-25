@@ -9,6 +9,8 @@ public class Alarm : MonoBehaviour,IInteractable
     public float cooldown = 6f;
     private float timer = 0f;
     private Animation anim;
+    [SerializeField] public GameObject health;
+    [SerializeField]public float damage;
 
     void Start()
     {
@@ -30,6 +32,7 @@ public class Alarm : MonoBehaviour,IInteractable
             }
         }else{
             print("Alarm is on");
+            health.GetComponent<HealthManager>().ApplyDamage(damage* Time.deltaTime);
         }
     }
 

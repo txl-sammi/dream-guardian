@@ -13,6 +13,9 @@ public class Television : MonoBehaviour, IInteractable
 
     [SerializeField] GameObject screen;
 
+    [SerializeField] public GameObject health;
+    [SerializeField]public float damage;
+
     void Start(){
 
     }
@@ -28,6 +31,9 @@ public class Television : MonoBehaviour, IInteractable
                     TurnOn();
                 }
             }
+        }else{
+                        print("TV is on");
+            health.GetComponent<HealthManager>().ApplyDamage(damage* Time.deltaTime);
         }
     }
 

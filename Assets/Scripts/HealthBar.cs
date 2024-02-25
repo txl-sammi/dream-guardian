@@ -8,6 +8,7 @@ public class HealthBar : MonoBehaviour
     [SerializeField] private string type;
     [SerializeField] private Image healthFillImage;
     [SerializeField] private Image healthFillImageRound;
+    [SerializeField] private float restoreAmount;
 
     private void Start()
     {
@@ -19,13 +20,12 @@ public class HealthBar : MonoBehaviour
         UpdateHealthUI();
     }
 
+    private void Update(){
+        healthManager.Heal(restoreAmount*Time.deltaTime);
+    }
+
     private void UpdateHealthUI()
     {
-        if (healthText != null && healthManager != null)
-        {
-            //healthText.text = type + ": " + healthManager.CurrentHealth.ToString("F");
-            healthText.text = ((int)healthManager.CurrentHealth).ToString("0");
-        }
 
         if (healthManager != null && healthManager.startingHealth != 0)
         {

@@ -37,7 +37,7 @@ public class HealthManager : MonoBehaviour
         CurrentHealth = this.startingHealth;
     }
 
-    public void Heal(int healAmount)
+    public void Heal(float healAmount)
     {
         if (CurrentHealth + healAmount > startingHealth)
         {
@@ -46,11 +46,11 @@ public class HealthManager : MonoBehaviour
         else
         {
             CurrentHealth += healAmount;
-            //onHealthChanged.Invoke();
+            onHealthChanged.Invoke();
         }
     }
 
-    public void ApplyDamage(int damage)
+    public void ApplyDamage(float damage)
     {
         CurrentHealth -= damage;
         onDamageTaken.Invoke();
