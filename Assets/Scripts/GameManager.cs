@@ -17,4 +17,8 @@ public class GameManager : MonoBehaviour
     {
         
     }
+    public void GameOver()
+    {
+        GameoverMenu.SetActive(true);
+    }
 }
