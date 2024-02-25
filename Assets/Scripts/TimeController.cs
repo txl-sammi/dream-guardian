@@ -22,7 +22,7 @@ public class TimeController : MonoBehaviour
     {
         currentTime = DateTime.Now.Date + TimeSpan.FromHours(startHour);
         startTime = currentTime;
-        elapsedTime = currentTime - startTime;
+        
         
     }
 
@@ -41,6 +41,6 @@ public class TimeController : MonoBehaviour
     }
 
     public TimeSpan totalTime(){
-        return elapsedTime;
+        return currentTime - startTime;;
     }
 }
