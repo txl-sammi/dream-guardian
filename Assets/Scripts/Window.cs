@@ -13,6 +13,8 @@ public class Window : MonoBehaviour, IInteractable
     [SerializeField] GameObject close;
     [SerializeField] GameObject light;
 
+    [SerializeField] public GameObject health;
+    [SerializeField] public float damage;
     void Start(){
 
     }
@@ -28,6 +30,11 @@ public class Window : MonoBehaviour, IInteractable
                     Open();
                 }
             }
+        }
+        else
+        {
+            print("Windows is on");
+            health.GetComponent<HealthManager>().ApplyDamage(damage* Time.deltaTime);
         }
     }
 

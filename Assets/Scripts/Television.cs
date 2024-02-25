@@ -5,7 +5,7 @@ using UnityEngine;
 public class Television : MonoBehaviour, IInteractable
 {
     [SerializeField] private Animator _animator;
-    private bool isTVon = true;
+    private bool isTVon = false;
     public float resetDelay = 2f;
 
     public float cooldown = 5f;
@@ -14,7 +14,7 @@ public class Television : MonoBehaviour, IInteractable
     [SerializeField] GameObject screen;
 
     [SerializeField] public GameObject health;
-    [SerializeField]public float damage;
+    [SerializeField] public float damage;
 
     void Start(){
 
