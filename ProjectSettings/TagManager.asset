@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Kitchen
+    uniqueID: 3779992991
+    locked: 0
   - name: Furniture
     uniqueID: 1058858715
     locked: 0

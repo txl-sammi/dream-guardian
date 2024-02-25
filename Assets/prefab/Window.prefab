@@ -793,7 +793,7 @@ GameObject:
   m_Component:
   - component: {fileID: 315723588000898572}
   m_Layer: 6
-  m_Name: Light
+  m_Name: Sunlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
