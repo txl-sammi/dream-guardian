@@ -28,4 +28,11 @@ public class MenuSceneManager : MonoBehaviour
         string lvlName = "GameScene";
         SceneManager.LoadScene(lvlName, LoadSceneMode.Single);
     }
+    
+    public void Back()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MenuScene");
+        print("111");
+    }
 }
