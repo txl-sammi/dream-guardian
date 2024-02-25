@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2764408518227935191}
   - component: {fileID: 1046145573432591646}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 4556894643805157029}
   - component: {fileID: 1533998515399208535}
   - component: {fileID: 7029043983921101577}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Alarm
   m_TagString: Untagged
   m_Icon: {fileID: 0}

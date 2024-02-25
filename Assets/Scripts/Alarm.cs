@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Alarm : MonoBehaviour
+public class Alarm : MonoBehaviour,IInteractable
 {
     // Start is called before the first frame update
     private bool isAlarmOn = false;
@@ -31,9 +31,12 @@ public class Alarm : MonoBehaviour
         }else{
             print("Alarm is on");
         }
+    }
 
 
-        
+        public void Interact()
+    {
+        TurnOffAlarm();
     }
 
     public void TurnOnAlarm(){
@@ -53,7 +56,9 @@ public class Alarm : MonoBehaviour
 
     //princess check isAlarmOn: if alarm is on, call ApplyDamage()
 
-    public bool IsAlarmOn(){
+
+        public bool CanInteract()
+    {
         return isAlarmOn;
     }
 }
